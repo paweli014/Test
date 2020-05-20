@@ -22,7 +22,7 @@
         }
       },
       {
-        "label": "build our prog",
+        "label": "program2_a",
         "type": "shell",
         "command": "g++",
         "args": ["-fopenmp", "-std=c++17", "-Wall", "-o", "prog", "02/main.cpp"],
@@ -32,7 +32,7 @@
         }
       },
       {
-        "label": "build our prog",
+        "label": "program2_b",
         "type": "shell",
         "command": "gcc",
         "args": ["-std=c2x", "-Wall", "-o", "prog", "02/main.c"],
@@ -42,7 +42,7 @@
         }
       },
       {
-        "label": "build our prog",
+        "label": "program2_c",
         "type": "shell",
         "command": "g++",
         "args": ["-fopenmp", "-std=c++17", "-Wall", "-o", "prog", "02/main2.cpp"],
@@ -52,10 +52,20 @@
         }
       },
       {
-        "label": "build our prog",
+        "label": "program2_d",
         "type": "shell",
         "command": "gcc",
         "args": ["-std=c2x", "-Wall", "-o", "prog", "02/main2.c"],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "program2_e",
+        "type": "shell",
+        "command": "g++",
+        "args": ["-fopenmp", "-std=c++17", "-Wall", "-o", "prog", "02/main3.cpp"],
         "group": {
           "kind": "build",
           "isDefault": true
