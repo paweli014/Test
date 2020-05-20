@@ -8,6 +8,7 @@ int main(){
     {
     int ID =  omp_get_thread_num();
     cout << "Watek nr " << ID << endl;
+    cout << "Koniec" << endl;
     }
 
 }
